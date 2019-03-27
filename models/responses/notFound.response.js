@@ -3,7 +3,7 @@ class NotFoundResponse {
   constructor(res) {
 
     this.status = 404
-    this.result = "Endpont not found"
+    this.result = "Endpoint not found"
     this.datetime = new Date().toISOString()
 
     res.status(this.status).json(this).end()
