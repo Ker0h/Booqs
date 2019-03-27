@@ -1,0 +1,7 @@
+{
+    "port": 8080,
+    "databases": {
+        "mongo": "mongodb://localhost/booqs",
+        "mongo-test": "mongodb://localhost/booqs_test"
+    }
+}
