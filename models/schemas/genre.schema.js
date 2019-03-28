@@ -6,7 +6,7 @@ const BookSchema = require('./book.schema').BookSchema
 
 var GenreSchema = new Schema({
   name: { type: String, required: true },
-  description: { type: String, required: false },
+  description: { type: String, required: true },
   subgenre: {type: this, required: false }
 })
 

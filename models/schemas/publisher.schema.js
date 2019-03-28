@@ -5,7 +5,7 @@ const BookSchema = require('./book.schema').BookSchema
 
 var PublisherSchema = new Schema({
   name: { type: String, required: true },
-  location: { type: String, required: false }
+  location: { type: String, required: true }
 })
 
 const Publisher = mongoose.model('Publisher', PublisherSchema)
