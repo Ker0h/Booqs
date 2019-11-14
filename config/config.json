@@ -1,7 +1,7 @@
 {
     "port": 8080,
     "databases": {
-        "mongo": "mongodb://localhost/booqs",
+        "mongo": "mongodb+srv://ker0h:Qwerty_123@booqs-mongo-cgart.mongodb.net/test?retryWrites=true&w=majority",
         "mongo-test": "mongodb://localhost/booqs_test"
     }
 }
