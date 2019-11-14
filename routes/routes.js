@@ -1,10 +1,10 @@
 const routes = require('express').Router()
-const books_routes = require('./books.routes')
+const books_route = require('./books.route')
 
 const NotFoundResponse = require('../models/responses/notFound.response')
 
-routes.get('/', (req, res) => res.status(200).json({"message": "Hello World!"}))
-routes.use('/books', books_routes)
+routes.get('/', (req, res) => res.status(200).json({"messsage": "Hello World!"}))
+routes.use('/books', books_route)
 routes.use('*', (req, res) => new NotFoundResponse(res))
 
 module.exports = routes

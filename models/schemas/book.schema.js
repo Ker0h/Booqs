@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const ObjectId = mongoose.Schema.Types.ObjectId
-const GenreSchema = require('./genre.schema.js.js').GenreSchema
+const GenreSchema = require('./genre.schema.js').GenreSchema
 
 var BookSchema = new Schema({
   isbn: { type: String, required: false },
