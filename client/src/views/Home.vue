@@ -9,8 +9,8 @@
 
     <b-row>
         <b-col>
-            <b-alert 
-                :show="dismissCountDown" 
+            <b-alert
+                :show="dismissCountDown"
                 dismissible
                 fade
                 variant="danger"
@@ -25,25 +25,25 @@
 </template>
 
 <script>
-  export default {
-      data() {
-      return {
-        dismissSecs: 10,
-        dismissCountDown: 0
-      }
-    },
-    name: 'home',
-    methods: {
-      countDownChanged(dismissCountDown) {
-        this.dismissCountDown = dismissCountDown
-      },
-      showAlert() {
-        this.dismissCountDown = this.dismissSecs
-      }
-    },
-    mounted() {
-        this.showAlert()
+export default {
+  data () {
+    return {
+      dismissSecs: 10,
+      dismissCountDown: 0
     }
+  },
+  name: 'home',
+  methods: {
+    countDownChanged (dismissCountDown) {
+      this.dismissCountDown = dismissCountDown
+    },
+    showAlert () {
+      this.dismissCountDown = this.dismissSecs
+    }
+  },
+  mounted () {
+    this.showAlert()
   }
+}
 
 </script>
