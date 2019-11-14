@@ -4,13 +4,13 @@
   "description": "Manage your book collection",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "clear && nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ker0h/Booqs.git"
   },
-  "author": "Ker0h",
+  "author": "Yannick Willems",
   "license": "GPLv2",
   "bugs": {
     "url": "https://github.com/Ker0h/Booqs/issues"
@@ -21,7 +21,7 @@
     "boxen": "^2.1.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "mongoose": "^5.7.10",
+    "mongoose": "^5.4.0",
     "morgan": "^1.9.1"
   }
 }
