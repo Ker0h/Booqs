@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Login from './views/Login.vue'
-import Books from './views/Books.vue'
 
 Vue.use(Router)
 
@@ -23,11 +22,6 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
-    },
-    {
-      path: '/books',
-      name: 'books',
-      component: Books
     }
   ]
 })
