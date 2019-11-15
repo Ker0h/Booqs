@@ -1,7 +1,6 @@
 const app = require('../server.js')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
-const cors = require('cors')
 
 // Accept JSON
 app.use(bodyParser.json({
@@ -9,7 +8,11 @@ app.use(bodyParser.json({
 }))
 
 //Accept CORS
-app.use(cors())
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 
 // Accept URL Encoded
 app.use(bodyParser.urlencoded({
