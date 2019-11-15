@@ -3,7 +3,7 @@ const express = require('express')
 const app = module.exports = express();
 
 //CORS
-const cors = require('cors')
+//const cors = require('cors')
 //app.use(cors())
 
 // Configuration
