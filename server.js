@@ -4,7 +4,7 @@ const app = module.exports = express();
 
 //CORS
 const cors = require('cors')
-app.use(cors())
+//app.use(cors())
 
 // Configuration
 const config = require('./config/config.json')
